@@ -46,7 +46,7 @@ const HomeScreen = () => {
                         </div>
                     </section>
                     <section className="mt-5">
-                        <h2>Movies</h2>
+                        <h2>Películas</h2>
                         <hr />
                         <PosterGridMovies moviesList={moviesPosterGrid} />
                     </section>
