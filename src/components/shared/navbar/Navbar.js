@@ -43,6 +43,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span
                             className="nav-item nav-link pointer"
+                            id="logout-button"
                             onClick={onLogoutClick}
                         >
                             Salir

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <SlideShow /> Should display the component correctly 1`] = `
+<div
+  className="swiper-container"
+>
+  <div
+    className="swiper-wrapper"
+  >
+    <a
+      className="swiper-slide"
+      href="/movie/1"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(https://image.tmdb.org/t/p/w500undefined)",
+          "backgroundPosition": "center",
+          "backgroundSize": "cover",
+        }
+      }
+    >
+      <div
+        className="movie-description"
+      >
+        <h3 />
+        <p>
+          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno es...
+        </p>
+      </div>
+    </a>
+    <a
+      className="swiper-slide"
+      href="/movie/2"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(https://image.tmdb.org/t/p/w500undefined)",
+          "backgroundPosition": "center",
+          "backgroundSize": "cover",
+        }
+      }
+    >
+      <div
+        className="movie-description"
+      >
+        <h3 />
+        <p />
+      </div>
+    </a>
+    <a
+      className="swiper-slide"
+      href="/movie/3"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(https://image.tmdb.org/t/p/w500undefined)",
+          "backgroundPosition": "center",
+          "backgroundSize": "cover",
+        }
+      }
+    >
+      <div
+        className="movie-description"
+      >
+        <h3 />
+        <p />
+      </div>
+    </a>
+  </div>
+  <div
+    className="swiper-button-prev"
+  />
+  <div
+    className="swiper-button-next"
+  />
+</div>
+`;

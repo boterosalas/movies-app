@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <LoginScreen /> Should display the component correctly 1`] = `
+<div
+  className="principal-container"
+>
+  <h1
+    className="text-dark"
+  >
+    Inicio de sesión
+  </h1>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="inputName"
+      >
+        Nombre
+      </label>
+      <input
+        className="form-control"
+        id="inputName"
+        name="name"
+        onChange={[Function]}
+        placeholder="John Doe"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="inputEmail"
+      >
+        Correo
+      </label>
+      <input
+        className="form-control"
+        id="inputEmail"
+        name="email"
+        onChange={[Function]}
+        placeholder="johndoe@example.com"
+        type="email"
+        value=""
+      />
+    </div>
+    <button
+      className="btn btn-primary btn-block"
+      type="submit"
+    >
+      Ingresar
+    </button>
+  </form>
+</div>
+`;

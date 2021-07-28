@@ -13,6 +13,7 @@ const HomeScreen = () => {
         fetch(`${BASE_URL}&page=1}`)
             .then(res => res.json())
             .then(({ results }) => {
+                console.log(results)
                 setMovies(p => [...p, ...results]);
                 setMoviesPosterGrid(p => [...p, ...results]);
                 setPage(p => p + 1);

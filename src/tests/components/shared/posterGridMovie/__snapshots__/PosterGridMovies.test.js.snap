@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <PosterGridMovies /> Should display the component correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-6 col-sm-4 col-md-3 mb-4"
+    key="1"
+  >
+    <a
+      href="/movie/1"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="img-fluid poster"
+        src="/assets/no-image.jpg"
+      />
+    </a>
+    <div>
+      <p
+        className="text-warning text-right m-0 w-100"
+      />
+      <h3
+        className="movie-title"
+      />
+    </div>
+  </div>
+  <div
+    className="col-6 col-sm-4 col-md-3 mb-4"
+    key="2"
+  >
+    <a
+      href="/movie/2"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="img-fluid poster"
+        src="/assets/no-image.jpg"
+      />
+    </a>
+    <div>
+      <p
+        className="text-warning text-right m-0 w-100"
+      />
+      <h3
+        className="movie-title"
+      />
+    </div>
+  </div>
+  <div
+    className="col-6 col-sm-4 col-md-3 mb-4"
+    key="3"
+  >
+    <a
+      href="/movie/3"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="img-fluid poster"
+        src="/assets/no-image.jpg"
+      />
+    </a>
+    <div>
+      <p
+        className="text-warning text-right m-0 w-100"
+      />
+      <h3
+        className="movie-title"
+      />
+    </div>
+  </div>
+</div>
+`;

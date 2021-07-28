@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <AppRouter /> Should display the component correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "setUser": [Function],
+      "user": null,
+    }
+  }
+>
+  <BrowserRouter>
+    <div>
+      <Switch>
+        <Route
+          component={[Function]}
+          exac={true}
+          path="/login"
+        />
+        <Route
+          component={[Function]}
+          exac={true}
+          path="/"
+        />
+      </Switch>
+    </div>
+  </BrowserRouter>
+</ContextProvider>
+`;

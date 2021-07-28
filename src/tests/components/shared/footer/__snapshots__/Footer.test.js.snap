@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <Footer /> Should display the component correctly 1`] = `
+<footer
+  className="footer-container"
+>
+  © MoviesApp - 2021
+</footer>
+`;

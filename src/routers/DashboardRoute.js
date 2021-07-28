@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import { Redirect, Route, Router, Switch, useHistory } from 'react-router-dom';
 import Footer from '../components/shared/footer/Footer';
 import HomeScreen from '../components/home/HomeScreen';
 import MovieScreen from '../components/movie/MovieScreen';
@@ -13,7 +13,7 @@ const DashboardRoute = () => {
     const { user } = useContext(UserContext);
     useEffect(() => {
         if (!user) {
-            history.push('/login');
+            history.replace('/login');
         }
     }, [user, history])
     return (

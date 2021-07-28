@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <Navbar /> Should display the component correctly 1`] = `
+<nav
+  className="navbar fixed-top navbar-expand-sm navbar-dark bg-dark mb-5"
+>
+  <a
+    aria-current={null}
+    className="navbar-brand"
+    onClick={[Function]}
+  >
+    MoviesApp
+  </a>
+  <button
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    className="navbar-toggler"
+    data-target="#navbarSupportedContent"
+    data-toggle="collapse"
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    className="collapse navbar-collapse"
+    id="navbarSupportedContent"
+  >
+    <ul
+      className="navbar-nav mr-auto"
+    />
+    <form
+      className="form-inline my-2 my-lg-0"
+      onSubmit={[Function]}
+    >
+      <input
+        aria-label="Search"
+        className="form-control mr-sm-2"
+        onChange={[Function]}
+        placeholder="Buscar una película"
+        type="text"
+        value=""
+      />
+      <button
+        className="btn btn-outline-success my-2 my-sm-0"
+        type="submit"
+      >
+        Buscar
+      </button>
+    </form>
+    <ul
+      className="navbar-nav"
+    >
+      <li
+        className="nav-item"
+      >
+        <span
+          className="nav-item nav-link pointer"
+          id="logout-button"
+          onClick={[Function]}
+        >
+          Salir
+        </span>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

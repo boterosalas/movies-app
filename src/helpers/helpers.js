@@ -11,10 +11,10 @@ export const getPosterUrl = (poster_path) => {
 }
 
 export const extractCharacters = (text, limit) => {
-    if (text.length <= limit) {
+    if (text.length <= limit){
         return text;
     } else {
-        return `${text.substring(0, limit)}...`;
+        return `${text.substring(0, limit - 3)}...`;
     }
 }
 

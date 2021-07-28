@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../routers/UserContext';
 import './Login.css';
 
-const LoginScreen = ({ history }) => {
+const LoginScreen = () => {
+    let history = useHistory();
     const { setUser } = useContext(UserContext);
     const [formState, setFormState] = useState({
         name: '',
