@@ -1,26 +1,38 @@
-import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import CharactersScreen from '../components/characters/CharactersScreen';
-import ComicsScreen from '../components/comics/ComicsScreen';
-import EventsScreen from '../components/events/EventsScreen';
-import SeriesScreen from '../components/series/SeriesScreen';
-import StoriesScreen from '../components/stories/StoriesScreen';
-import Navbar from '../components/ui/Navbar';
+import React, { useContext, useEffect } from 'react';
+import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import Footer from '../components/shared/footer/Footer';
+import HomeScreen from '../components/home/HomeScreen';
+import MovieScreen from '../components/movie/MovieScreen';
+import SearchScreen from '../components/search/SearchScreen';
+import Navbar from '../components/shared/navbar/Navbar';
+import { UserContext } from './UserContext';
+import './DashboardRoute.css';
 
 const DashboardRoute = () => {
+    let history = useHistory();
+    const { user } = useContext(UserContext);
+    useEffect(() => {
+        if (!user) {
+            history.push('/login');
+        }
+    }, [user, history])
     return (
         <>
-            <Navbar />
-            <div>
-                <Switch>
-                    <Route exact path="/characters" component={CharactersScreen} />
-                    <Route exact path="/comics" component={ComicsScreen} />
-                    <Route exact path="/series" component={SeriesScreen} />
-                    <Route exact path="/events" component={EventsScreen} />
-                    <Route exact path="/stories" component={StoriesScreen} />
-                    <Redirect to="/characters" />
-                </Switch>
-            </div>
+            {
+                user &&
+                <>
+                    <Navbar />
+                    <main className="container mt-7">
+                        <Switch>
+                            <Route exact path="/" component={HomeScreen} />
+                            <Route exact path="/search/:text" component={SearchScreen} />
+                            <Route exact path="/movie/:id" component={MovieScreen} />
+                            <Redirect to="/" />
+                        </Switch>
+                    </main>
+                    <Footer />
+                </>
+            }
         </>
     )
 }
