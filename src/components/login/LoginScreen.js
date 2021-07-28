@@ -30,11 +30,11 @@ const LoginScreen = ({ history }) => {
             <form className="form" onSubmit={handleLogin}>
                 <div className="mb-3">
                     <label htmlFor="inputName" className="form-label">Nombre</label>
-                    <input onChange={handleInputChange} value={name} name="name" type="text" className="form-control" id="inputName" />
+                    <input onChange={handleInputChange} value={name} name="name" placeholder="John Doe" type="text" className="form-control" id="inputName" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="inputEmail" className="form-label">Correo</label>
-                    <input onChange={handleInputChange} value={email} name="email" type="email" className="form-control" id="inputEmail" />
+                    <input onChange={handleInputChange} value={email} name="email" placeholder="johndoe@example.com" type="email" className="form-control" id="inputEmail" />
                 </div>
                 <button type="submit" className="btn btn-primary btn-block">Ingresar</button>
             </form>

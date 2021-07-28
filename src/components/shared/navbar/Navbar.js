@@ -36,8 +36,8 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto"></ul>
                 <form className="form-inline my-2 my-lg-0" onSubmit={searchMovie}>
-                    <input value={textSearch} onChange={(e) => { setTextSearch(e.target.value) }} className="form-control mr-sm-2" type="text" placeholder="Search a movie" aria-label="Search" />
-                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input value={textSearch} onChange={(e) => { setTextSearch(e.target.value) }} className="form-control mr-sm-2" type="text" placeholder="Buscar una película" aria-label="Search" />
+                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
                 <ul className="navbar-nav">
                     <li className="nav-item">
@@ -45,7 +45,7 @@ const Navbar = () => {
                             className="nav-item nav-link pointer"
                             onClick={onLogoutClick}
                         >
-                            Logout
+                            Salir
                         </span>
                     </li>
                 </ul>

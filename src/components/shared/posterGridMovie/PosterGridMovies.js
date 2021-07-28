@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { getPosterUrl } from '../../helpers/helpers';
+import { getPosterUrl } from '../../../helpers/helpers';
 import './PosterGridMovies.css';
 
 const PosterGridMovies = ({ moviesList }) => {
